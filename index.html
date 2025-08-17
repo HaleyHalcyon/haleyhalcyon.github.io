@@ -30,13 +30,26 @@
         padding: 16px;
         border-radius: 12px;
       }
+
+      [lang]::before {
+        display: inline-block;
+        font-weight: 700;
+        opacity: 0.8;
+        font-size: 12px;
+      }
+      :lang(en-US) { content: "English:" }
+      :lang(nl) { content: "Nederlands:" }
+      :lang(tok) { content: "toki pona:" }
+      :lang(mis_kkn) { content: "Kokanu:" }
     </style>
   </head>
   <body>
     <div id="width">
       <h1>HaleyHalcyon on GitHub Pages</h1>
-      <p>You might be looking for...</p>
+      <p lang="en-US">You might be looking for...</p>
       <p lang="nl">Misschien zoekt u...</p>
+      <p lang="mis_kkn">le konen ta tu le jatan in...</p>
+      <p lang="tok">ken la, sina alasa e ni:</p>
       <ul class="links">
         <li>
           <h3 lang="nl"><a href="https://haleyhalcyon.github.io/woordel/">WOORDEL</a> – een dagelĳks woordspelletje (met de lange Ĳ)</h3>
